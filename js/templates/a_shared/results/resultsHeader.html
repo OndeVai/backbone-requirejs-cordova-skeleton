@@ -1,0 +1,32 @@
+<%if(renderData.viewMode==='goRound'){ %>
+
+<th>Place</th>
+<th>Contestant</th>
+
+<%if(renderData.isScored && !renderData.isOverall){ %>
+<th>Stock</th>
+<%} %>
+
+<th><%=renderData.isScored ? 'Score' : 'Time' %></th>
+<th>Champ Money</th>
+
+<%} %>
+
+<%if(renderData.viewMode==='rodeo'){ %>
+
+<%if(!renderData.isAllAround){ %>
+<th>Go</th>
+<%} %>
+<th>Place</th>
+<th><%=renderData.isTeamEvent ? 'Contestants' : 'Contestant' %></th>
+<%if(!renderData.isAllAround){ %>
+<th><%=renderData.isScored ? 'Score' : 'Time' %></th>
+<%} %>
+
+<th><%=renderData.isAllAround ? 'Money' : 'Champ Money' %></th>
+
+<%if(renderData.isAllAround){ %>
+<th>Event(s)</th>
+<%} %>
+
+<%} %>

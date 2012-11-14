@@ -1,0 +1,81 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=640, user-scalable=0" />
+    <meta name="MobileOptimized" content="640">
+    <link rel="apple-touch-icon-precomposed" href="img/icon.png" />
+    <link rel="apple-touch-startup-image" href="img/splash.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <title>PRCAProRodeo</title>
+    <link media="all" rel="stylesheet" type="text/css" href="css/all.css" />
+    <link media="all" rel="stylesheet" type="text/css" href="css/env.css" />
+    <link rel="stylesheet" type="text/css" href="css/photo-swipe/photoswipe.css" />
+    <script src="cordova-2.1.0.js"></script>
+    <script type="text/javascript" src="js/libs/analytics/ga.js"></script>
+    <script data-main="js/main" src="js/libs/require/require.js"></script>
+</head>
+<body>
+    <div id="page">
+        <div id="loader">
+            <img src="images/page-loader.gif" /></div>
+        <div id="menu-block" style="display: none">
+            <ul class="nav">
+                <li><a data-href="" class="home">Home</a></li>
+                <li><a data-href="news" class="news">News</a></li>
+                <li><a data-href="results-standings" class="results">Results &amp;
+                    <br>
+                    Standings</a></li>
+                <li><a data-href="schedules" class="schedules">Schedules</a></li>
+                <li><a data-href="social" class="social">Social</a></li>
+                <li><a data-href="about" class="about">About</a></li>
+            </ul>
+            <strong class="text-nfr"><a data-href="nfr">NFR news</a></strong>
+            <h2>
+                LATEST TWEET</h2>
+            <div class="tweet">
+                <div class="holder">
+                    <div class="frame">
+                        <p class="latest-tweet">
+                            Loading...</p>
+                        <em class="by">-sent via ProRodeoOnline</em>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="wrapper">
+            <div class="heading error" style="display: none">
+                <span>An unexpected error occurred.
+                    <br />
+                    Please try again later.</span>
+            </div>
+                <div class="panels">
+                    <div class="main">
+                        <img src="images/loading-page.jpeg" alt="loading" />
+                    </div>
+                </div>
+            </div>
+    </div>
+    <script id="panel-template" type="text/template">
+        <header class="header">
+	        <a class="btn-menu">menu</a>
+	        <strong class="logo"><a data-href="">PRCA ProRodeo</a></strong>
+	    </header>
+        <div class="heading">
+            <a class="link-back">Back</a>
+            <h1></h1>
+        </div>            
+    </script>
+    
+    <script id="ad-template" type="text/template">
+        <h3>Advertisement</h3>
+        <div class="promobox">
+            <a href="http://d1.openx.org/ck.php?n={0}" target="_blank">
+                <img src="http://d1.openx.org/avw.php?zoneid={1}&n={0}" border="0" alt="" width="583" height="104" />
+            </a>
+        </div>
+    </script>
+</body>
+</html>

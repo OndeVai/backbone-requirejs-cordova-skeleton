@@ -1,0 +1,11 @@
+﻿[{ "Id": 1, "SortOrder": 1,  "Name": "Go Round 1", "Day": "December 6" },
+ { "Id": 2, "SortOrder": 2,  "Name": "Go Round 2", "Day": "December 7" },
+ { "Id": 3, "SortOrder": 3,  "Name": "Go Round 3", "Day": "December 8" },
+ { "Id": 4, "SortOrder": 4,  "Name": "Go Round 4", "Day": "December 9" },
+ { "Id": 5, "SortOrder": 5,  "Name": "Go Round 5", "Day": "December 10" },
+ { "Id": 6, "SortOrder": 6,  "Name": "Go Round 6", "Day": "December 11" },
+ { "Id": 7, "SortOrder": 7,  "Name": "Go Round 7", "Day": "December 12" }, 
+ { "Id": 8, "SortOrder": 8,  "Name": "Go Round 8", "Day": "December 13" },
+ { "Id": 9, "SortOrder": 9,  "Name": "Go Round 9", "Day": "December 14" },
+ { "Id": 10, "SortOrder": 10,  "Name": "Go Round 10", "Day": "December 15" },
+ { "Id": 200, "SortOrder": 11,  "Name": "Average", "Day": "" }]

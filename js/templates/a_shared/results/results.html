@@ -1,0 +1,21 @@
+<form action="#" class="form-filter">
+<fieldset>
+    <label for="select-field">
+        Filter by Category</label>
+    <select id="select-field" class="filter-events">
+        <% _.each(rodeo.Events, function(event) { %>
+        <option value="<%=event.EventCode %>">
+            <%=event.Description %></option>
+        <% }); %>
+    </select>
+</fieldset>
+</form>
+<table class="results-grid" cellspacing="0">
+    <tr class="table-head results-header">
+    </tr>
+    <tbody class="results">
+    </tbody>
+</table>
+<div class="no-results">
+    There were no results meeting your criteria.
+</div>

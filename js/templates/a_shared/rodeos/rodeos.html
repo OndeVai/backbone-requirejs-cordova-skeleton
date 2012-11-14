@@ -1,0 +1,60 @@
+<div class="title-holder title-holder2 filter-show">
+    <h2 class="header-text">
+        Results List</h2>
+    <a class="btn-filter"><span>Filter</span></a>
+</div>
+<form action="#" class="form-filter2 filter-container">
+<fieldset>
+    <span class="title">Filter by any or all of the following</span>
+    <div class="row">
+        <figure>
+				<img src="images/ico-state.png" width="138" height="86" alt="image description">
+			</figure>
+        <select class="filter-states">
+            <option value="">Select State</option>
+            <% _.each(states, function(state) { %>
+            <option value="<%=state.StateName %>">
+                <%=state.StateName %></option>
+            <% }); %>
+        </select>
+    </div>
+    <div class="row">
+        <figure>
+	            <img src="images/ico-city.png" width="103" height="87" alt="image description">
+	        </figure>
+        <select class="filter-cities">
+            <option value="">Select City</option>
+            <% _.each(cities, function(city) { %>
+            <option value="<%=city.City %>">
+                <%=city.City %></option>
+            <% }); %>
+        </select>
+    </div>
+    <div class="row">
+        <figure>
+				<img src="images/ico-date.png" width="103" height="87" alt="image description">
+			</figure>
+        <select class="filter-months">
+            <option value="">Select Month</option>
+            <option value="1">January</option>
+            <option value="2">February</option>
+            <option value="3">March</option>
+            <option value="4">April</option>
+            <option value="5">May</option>
+            <option value="6">June</option>
+            <option value="7">July</option>
+            <option value="8">August</option>
+            <option value="9">September</option>
+            <option value="10">October</option>
+            <option value="11">November</option>
+            <option value="12">December</option>
+        </select>
+    </div>
+</fieldset>
+</form>
+<ul class="news-list <%=(viewMode=='schedule' ? 'schedule-list' : 'filter-list')%> rodeos">
+</ul>
+<a  class="btn-more pager"><span>Load More...</span></a>
+<h3 class="no-rodeos no-results">
+    No items found for your criteria.
+</h3>

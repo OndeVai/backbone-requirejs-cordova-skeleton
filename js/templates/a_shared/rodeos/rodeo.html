@@ -1,0 +1,25 @@
+<%if(Mode == 'schedule'){ %>
+<!--schedule-->
+<h3>
+    <%=City %>,
+    <%=StateName %></h3>
+<p>
+    <%=Name %></p>
+<p>
+    <%=StartDate.toShortDateString() %>
+    -
+    <%=EndDate.toShortDateString() %></p>
+<% } else { %>
+<div class="info">
+    <h3>
+        <a data-href="results-standings/results-list/<%=Id%>">
+            <%=City %>,
+            <%=StateName %>
+        </a>
+    </h3>
+    <p>
+        <%=Name %></p>
+       <!-- <p><%=Week %> <%=TotalPurse %> <%=StartDate.toShortDateString() %></p>-->
+</div>
+<a data-href="results-standings/results-list/<%=Id%>" class="arrow">more</a>
+<% }  %>
